@@ -1,0 +1,10 @@
+<div >
+   <h1 class="tit" >{{tit}}</h1>
+
+   <img class="pic" [src]="imgLink">
+
+ <form (ngSubmit)="onAdd()">
+    <input  [(ngModel)]="title" name="title"placeholder="Add a Task"/>
+    <button type="submit">Add</button>
+ </form>
+</div>

@@ -1,0 +1,19 @@
+<ul>
+  @for (todo of todos; track todo.id) {
+    <li [class.done]="todo.done">
+      {{ todo.title }}
+      <div>
+        <button class="done-btn" (click)="onToggleDone(todo.id)">
+          {{ todo.done ? 'Undo' : 'Done' }}
+        </button>
+        <button class="delete-btn" (click)="onDelete(todo.id)">
+          Delete
+        </button>
+      </div>
+    </li>
+  }
+</ul>
+
+@if (todos.length === 0) {
+  <p>No Tasks Available</p>
+}

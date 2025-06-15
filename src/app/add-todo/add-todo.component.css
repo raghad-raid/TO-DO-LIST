@@ -1,0 +1,50 @@
+
+.tit{
+   text-align: center;
+    color: rgb(10, 141, 228);
+}
+.pic{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+form {
+  max-width: 400px;
+  margin: 30px auto 10px;
+  display: flex;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #1890ff;
+}
+
+button {
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bbb;
+}
